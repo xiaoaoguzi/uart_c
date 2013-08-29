@@ -1,0 +1,19 @@
+		//消除字符屏蔽规则：
+		options.c_cc[VINTR]    = 0;       /**//* Ctrl-c */
+		options.c_cc[VQUIT]     = 0;   /**//* Ctrl- */
+		options.c_cc[VERASE]    = 0;   /**//* del */
+		options.c_cc[VKILL]    = 0;   /**//* @ */
+		options.c_cc[VEOF]     = 0;   /**//* Ctrl-d */
+		options.c_cc[VTIME]    = 0;   /**//*  */
+		options.c_cc[VMIN]     = 0;   /**//*  */
+		options.c_cc[VSWTC]    = 0;   /**//* '' */
+		options.c_cc[VSTART]   = 0;   /**//* Ctrl-q */
+		options.c_cc[VSTOP]    = 0;   /**//* Ctrl-s */
+		options.c_cc[VSUSP]    = 0;   /**//* Ctrl-z */
+		options.c_cc[VEOL]     = 0;   /**//* '' */
+		options.c_cc[VREPRINT] = 0;   /**//* Ctrl-r */
+		options.c_cc[VDISCARD] = 0;   /**//* Ctrl-u */
+		options.c_cc[VWERASE]  = 0;   /**//* Ctrl-w */
+		options.c_cc[VLNEXT]   = 0;   /**//* Ctrl-v */
+		options.c_cc[VEOL2]    = 0;   /**//* '' */
+		Option.c_cc[VMIN] = 0; /* Update the Option and do it NOW */
